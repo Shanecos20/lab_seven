@@ -1,17 +1,21 @@
 <html>
 <body>
-    <h1>Hello World</h1>
+    <h1>Hello World</h1> <!-- Heading with message -->
 
+    <!-- Form that sends a GET request to '/name' with 'firstname' and 'lastname' as query parameters -->
     <form action="/name" method="GET">
-        First name: <input type="text" name="firstname"><br>
-        Last name: <input type="text" name="lastname"><br>
+        First name: <input type="text" name="firstname"><br> <!-- Input field for first name -->
+        Last name: <input type="text" name="lastname"><br> <!-- Input field for last name -->
         <input type="submit" value="Submit">
     </form>
-    
+    <!-- Close form -->
+
+    <!-- Form that sends a POST request to '/name' with 'firstname' and 'lastname' in the request body -->
     <form action="/name" method="POST">
-        First name: <input type="text" name="firstname"><br>
-        Last name: <input type="text" name="lastname"><br>
+        First name: <input type="text" name="firstname"><br> <!-- Input field for first name -->
+        Last name: <input type="text" name="lastname"><br> <!-- Input field for last name -->
         <input type="submit" value="Submit">
     </form>
+    <!-- Close form -->
 </body>
 </html>
