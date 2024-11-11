@@ -5,6 +5,8 @@ import NavigationBar from './components/NavigationBar';
 // import Header from './components/Header'; // Header component is imported but currently commented out
 import Content from './components/Content';
 import Footer from './components/Footer';
+import Read from './components/Read';
+import Create from './components/Create';
 
 function App() {
   return (
@@ -17,9 +19,9 @@ function App() {
         {/* Route to the Home page, rendering Content component */}
         <Route path="/home" element={<Content />} />
         {/* Route to the Read page, rendering a simple message */}
-        <Route path="/read" element={<h1 className="text-center text-primary">Read Component</h1>} />
+        <Route path="/read" element={<Read />} />
         {/* Route to the Create page, rendering a simple message */}
-        <Route path="/create" element={<h1 className="text-center text-primary">Create Component</h1>} />
+        <Route path="/create" element={<Create />} />
       </Routes>
       {/* Footer component that will be visible on all pages */}
       <Footer />
