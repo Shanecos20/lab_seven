@@ -1,1 +1,0 @@
-We use the Express framework to create fast, secure, and scalable NodeJS applications. Express is a minimalist web development framework for NodeJS that provides a robust set of features for creating web applications and services in NodeJS. In this article, we will learn about the basics of using Express in NodeJS, from installation to working with handlers and view engines.

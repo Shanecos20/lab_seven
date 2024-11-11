@@ -24,6 +24,8 @@ const movieSchema = new mongoose.Schema({
   poster: String
 });
 
+const movieModel = mongoose.model('Movie', movieSchema);
+
 // Custom CORS middleware to set response headers for cross-origin requests
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*"); // Allow requests from any origin
