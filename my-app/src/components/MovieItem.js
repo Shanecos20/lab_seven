@@ -18,22 +18,22 @@ function MovieItem(props) {
           {/* Card component to display movie details */}
           <Card className="shadow-sm">
             {/* Displaying the title of the movie in the card header */}
-            <Card.Header className="text-center" style={{ backgroundColor: '#6c757d', color: 'white' }}>
-              {props.mymovie.Title}
+            <Card.Header className="text-center" style={{ backgroundColor: '#CCF7FF', color: 'black' }}>
+              {props.mymovie.title}
             </Card.Header>
             <Card.Body className="text-center">
               {/* Displaying the movie poster image */}
               <Card.Img 
                 variant="top" 
-                src={props.mymovie.Poster} 
-                alt={props.mymovie.Title} 
+                src={props.mymovie.poster} 
+                alt={props.mymovie.title} 
                 className="img-fluid mb-3"
                 style={{ maxHeight: '100%', maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
               />
               {/* Displaying the year of the movie in the footer */}
               <blockquote className="blockquote mb-0">
                 <footer className="blockquote-footer">
-                  Year: <cite title="Movie Year">{props.mymovie.Year}</cite>
+                  Year: <cite title="Movie Year">{props.mymovie.year}</cite>
                 </footer>
               </blockquote>
             </Card.Body>
